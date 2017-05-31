@@ -1,9 +1,11 @@
 <div class="flex-container">
   <div class="flex-item">
     {{#each model as |folder|}}
-      <p>
-        <h2>{{#link-to 'folders.folder' folder.id}}{{folder.name}}{{/link-to}}</h2>
-      </p>
+        <div class="sidebar-folder">
+          {{#link-to 'folders.folder' folder.id}}
+            {{folder.name}}
+          {{/link-to}}
+        </div>
     {{/each}}
   </div>
   <div class="flex-item">

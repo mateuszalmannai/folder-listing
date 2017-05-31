@@ -6,3 +6,8 @@
 .flex-item {
   padding: 10px;
 }
+
+.sidebar-folder {
+  padding: 10px;
+  font-size: 1.3em;
+}

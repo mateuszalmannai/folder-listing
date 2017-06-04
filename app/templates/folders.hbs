@@ -1,7 +1,7 @@
-<h1>Folders here!</h1>
 <div class="flex-container">
   <div class="flex-item">
-    {{#each model as |folder|}}
+    {{!-- Only loop through the root folders, instead of looping through all of the models --}}
+    {{#each rootFolders as |folder|}}
       {{expandable-folder folder=folder}}
     {{/each}}
   </div>
